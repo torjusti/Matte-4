@@ -16,9 +16,9 @@ interpolation_points = [2 * pi * k / 4 for k in range(len(F))]
 for point in interpolation_points:
   print(interpolate(F, point))
 
-#X = np.linspace(0, 2 * pi, 256, endpoint=True)
-#plt.plot(X, interpolate(F, X))
-#plt.show()
+X = np.linspace(0, 2 * pi, 256, endpoint=True)
+plt.plot(X, interpolate(F, X))
+plt.show()
 
 error_matrix = [
   [0, 1 / 5, 2 / 5],
