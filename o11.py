@@ -44,7 +44,7 @@ D = np.diag(np.diag(A))
 D_inverse = np.linalg.inv(D)
 R = A - D
 
-for i in range(len(A)):
+for i in range(4):
   x = D_inverse.dot(b - R.dot(x))
 
 print(x)
